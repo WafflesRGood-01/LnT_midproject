@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to bottom right, #1f2c2e, #3c5154);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 60px;
+}
+
+.console {
+    background-color: #e6d6b1;
+    width: 500px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.console-error {
+    color: #ff6b6b;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.panel {
+    width: 500px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #7e928c;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.body {
+    background-color: #0e2b2d;
+    padding: 20px;
+    color: white;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.panel form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #0e2b2d;
+    color: white;
+}
+
+.panel input {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #163b3d;
+    border: none;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+.confirm {
+    margin-left: auto;
+}
+
+.success {
+    color: lightgreen;
+}
+
+.brand {
+    margin-top: auto;
+    padding: 40px 20px;
+    text-align: right;
+
+    font-size: 36px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    color: #b9d1cb;
+    text-shadow:
+    1px 1px 0 #7f9993,
+    2px 2px 0 #6f8a84,
+    3px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mode-btn {
+    background-color: #d9d9d9;
+    border: none;
+    padding: 6px 14px;
+    cursor: pointer;
+}
+
+.mode-btn.active {
+    background-color: #7e928c;
+    color: white;
+}
+
+.mode-btn:hover {
+    opacity: 0.8;
+}
